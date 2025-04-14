@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_eat"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Eat" />
+
+    <item
+        android:id="@+id/nav_sleep"
+        android:icon="@android:drawable/ic_menu_day"
+        android:title="Sleep" />
+
+    <item
+        android:id="@+id/nav_wash"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Wash" />
+
+    <item
+        android:id="@+id/nav_pee"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="Pee" />
+</menu>
