@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentPee">
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/gifView"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:contentDescription="Animal Peeing"
         android:src="@drawable/pee" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happiness"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 
-</FrameLayout>
+    <ProgressBar
+        android:id="@+id/happinessBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="100"
+        android:layout_marginTop="20dp"
+        android:progressTint="#FFD700" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+    <ProgressBar
+        android:id="@+id/healthBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="100"
+        android:layout_marginTop="10dp"
+        android:progressTint="#4CAF50" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Energy"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+    <ProgressBar
+        android:id="@+id/energyBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="100"
+        android:layout_marginTop="10dp"
+        android:progressTint="#03A9F4" />
+
+</LinearLayout>
